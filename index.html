@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D2R Warlock Guide — Reign of the Warlock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="fire-bar"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="class-icon">🔮</div>
+      <div>
+        <p class="game-label">Diablo II: Resurrected</p>
+        <h1>Warlock</h1>
+        <p class="subtitle">Reign of the Warlock — Complete Class Guide</p>
+      </div>
+    </div>
+    <p class="class-desc">"Dark scholars who forge pacts with demons, wielding forbidden fire and eldritch magic. They fight with bound demons at their side and a cursed blade in hand."</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#trees">Skill Trees</a>
+    <a href="#builds">Builds</a>
+    <a href="#demon">Demon Build</a>
+    <a href="#mirrored">Mirrored Blades</a>
+    <a href="#leveling">Leveling</a>
+    <a href="#farming">Farming</a>
+    <a href="#tips">Tips</a>
+  </nav>
+
+  <main>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h2>🔮 Class Overview</h2>
+      <p>The Warlock is the <strong>8th class</strong> in D2R — the first new class added in 25 years, introduced with the <em>Reign of the Warlock</em> expansion. Currently <strong>S-Tier</strong> in Season 13.</p>
+
+      <div class="card-grid three-col">
+        <div class="card center-card">
+          <div class="big-icon">😈</div>
+          <h3>Demon Tree</h3>
+          <p>Summon and bind powerful demons. Field Goatmen and bound enemies as your personal army. Best for beginners — strong and safe.</p>
+        </div>
+        <div class="card center-card">
+          <div class="big-icon">⚡</div>
+          <h3>Eldritch Tree</h3>
+          <p>Mirror your weapon, hex enemies, and enhance melee combat. Wield a 2-handed weapon in one hand while using a shield. Unique to Warlock.</p>
+        </div>
+        <div class="card center-card">
+          <div class="big-icon">🔥</div>
+          <h3>Chaos Tree</h3>
+          <p>Dark fire and magic damage. Sigils that alter enemy states on entry. Mix fire and magic paths for devastating AoE destruction.</p>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-box"><div class="stat-label">Starting Strength</div><div class="stat-val">15</div></div>
+        <div class="stat-box"><div class="stat-label">Starting Dexterity</div><div class="stat-val">15</div></div>
+        <div class="stat-box"><div class="stat-label">Starting Vitality</div><div class="stat-val">25</div></div>
+        <div class="stat-box"><div class="stat-label">Starting Energy</div><div class="stat-val">10</div></div>
+        <div class="stat-box highlight-stat"><div class="stat-label">Unique Mechanic</div><div class="stat-val" style="font-size:0.85rem;">2H weapon in 1 hand + shield</div></div>
+      </div>
+    </section>
+
+    <!-- SKILL TREES -->
+    <section id="trees">
+      <h2>📚 Skill Trees</h2>
+
+      <div class="tree-block demon-tree">
+        <h3>😈 Demon Tree</h3>
+        <div class="skill-grid">
+          <div class="skill-card"><div class="skill-name">Summon Goatman</div><div class="skill-desc">Your main tank. High damage melee demon that keeps enemies away from you.</div><div class="skill-tag">Max (20pts)</div></div>
+          <div class="skill-card"><div class="skill-name">Bind Demon</div><div class="skill-desc">Bind any demon you encounter in the world — including bosses — to your service for massive damage.</div><div class="skill-tag">Max (20pts)</div></div>
+          <div class="skill-card"><div class="skill-name">Demonic Mastery</div><div class="skill-desc">Increases demon count, damage, attack rating, speed, and more. Core passive for all demon builds.</div><div class="skill-tag">Max (20pts)</div></div>
+          <div class="skill-card"><div class="skill-name">Blood Oath</div><div class="skill-desc">Defensive passive — boosts survivability for your demon army. Synergy with Summon Goatman.</div><div class="skill-tag">Max (20pts)</div></div>
+          <div class="skill-card"><div class="skill-name">Death Mark</div><div class="skill-desc">Teleports your bound demon to a target location instantly. Essential for directing your Bound Demon.</div><div class="skill-tag">1 point</div></div>
+          <div class="skill-card"><div class="skill-name">Blood Boil</div><div class="skill-desc">AoE fire damage burst — good filler for trash packs while your demons handle single targets.</div><div class="skill-tag">1 point</div></div>
+        </div>
+      </div>
+
+      <div class="tree-block eldritch-tree">
+        <h3>⚡ Eldritch Tree</h3>
+        <div class="skill-grid">
+          <div class="skill-card"><div class="skill-name">Mirrored Blades</div><div class="skill-desc">Primary damage for the Eldritch build. Mirror your weapon for double strikes. Scales with weapon damage.</div><div class="skill-tag">Max (20pts)</div></div>
+          <div class="skill-card"><div class="skill-name">Eldritch Blast</div><div class="skill-desc">Powerful eldritch energy projectile. Basis for the Eldritch Blast build — magic damage that bypasses many immunities.</div><div class="skill-tag">Build-dependent</div></div>
+          <div class="skill-card"><div class="skill-name">Echoing Strike</div><div class="skill-desc">Magic damage that scales with Faster Cast Rate. Bypasses physical immunities. Best endgame damage for maps.</div><div class="skill-tag">Max in Echo build</div></div>
+          <div class="skill-card"><div class="skill-name">Hex: Bane</div><div class="skill-desc">Hexes enemies — applies a curse that amplifies damage taken. Core support skill in all builds.</div><div class="skill-tag">1 point</div></div>
+          <div class="skill-card"><div class="skill-name">Hex: Purge</div><div class="skill-desc">Removes enemy buffs and auras. Dump remaining skill points here after maxing main skills.</div><div class="skill-tag">Remaining pts</div></div>
+        </div>
+      </div>
+
+      <div class="tree-block chaos-tree">
+        <h3>🔥 Chaos Tree</h3>
+        <div class="skill-grid">
+          <div class="skill-card"><div class="skill-name">Sigil: Death</div><div class="skill-desc">Place a sigil on the ground that deals damage to enemies who enter it. Combine with Cleave for AoE terror zone farming.</div><div class="skill-tag">1 point</div></div>
+          <div class="skill-card"><div class="skill-name">Sigil: Lethargy</div><div class="skill-desc">Reduces enemies' Physical Damage Reduction — crucial for boss fights with high PDR. Cast before attacking.</div><div class="skill-tag">Max in Demon build</div></div>
+          <div class="skill-card"><div class="skill-name">Cleave</div><div class="skill-desc">Wide AoE sweep — excellent for clearing Terror Zones and dense mob packs quickly. Pairs great with Sigil: Death.</div><div class="skill-tag">Build-dependent</div></div>
+          <div class="skill-card"><div class="skill-name">Consume</div><div class="skill-desc">Consume a demon to gain power. Used in Mirrored Blades build to boost combat effectiveness before engaging.</div><div class="skill-tag">1 point (Mirrored)</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILDS OVERVIEW -->
+    <section id="builds">
+      <h2>🏆 Best Builds (Season 13)</h2>
+      <p>Seven Warlock builds available — here's how they rank and what they're for.</p>
+
+      <div class="card-grid">
+
+        <div class="card build-card tier-s-card">
+          <div class="build-tier">S</div>
+          <h3>Echoing Strike</h3>
+          <p>Most versatile build in the expansion. Magic damage bypasses most monster immunities. Scales with Faster Cast Rate. Dominates nearly every farming scenario.</p>
+          <div class="build-tags"><span class="btag btag-magic">Magic Dmg</span><span class="btag btag-ez">Beginner OK</span></div>
+        </div>
+
+        <div class="card build-card tier-s-card">
+          <div class="build-tier">S</div>
+          <h3>Demon Summoner</h3>
+          <p>Bind Hephasto with Cursed affix + Fanaticism for devastating physical damage. Safest starter — your demons do the work while you stay back.</p>
+          <div class="build-tags"><span class="btag btag-phys">Physical</span><span class="btag btag-ez">Best Starter</span></div>
+        </div>
+
+        <div class="card build-card tier-a-card">
+          <div class="build-tier">A</div>
+          <h3>Mirrored Blades</h3>
+          <p>Dual weapon mirror strikes. Strong single target with Bind Demon + Hex support. Great all-round build for endgame farming.</p>
+          <div class="build-tags"><span class="btag btag-phys">Physical</span><span class="btag btag-single">Single Target</span></div>
+        </div>
+
+        <div class="card build-card tier-a-card">
+          <div class="build-tier">A</div>
+          <h3>Fire Warlock</h3>
+          <p>Chaos tree fire damage path. Great against non-fire immune enemies. Combine with Sigils for zone control and mob management.</p>
+          <div class="build-tags"><span class="btag btag-fire">Fire Dmg</span><span class="btag btag-aoe">AoE</span></div>
+        </div>
+
+        <div class="card build-card tier-b-card">
+          <div class="build-tier">B</div>
+          <h3>Cleave</h3>
+          <p>Best AoE build for Terror Zone farming. Wide sweeping attacks clear packs fast. Less effective against bosses.</p>
+          <div class="build-tags"><span class="btag btag-phys">Physical</span><span class="btag btag-aoe">AoE</span></div>
+        </div>
+
+        <div class="card build-card tier-b-card">
+          <div class="build-tier">B</div>
+          <h3>Blood Boil</h3>
+          <p>Fire-based magic hybrid. Fun playstyle, moderate damage. Good leveling build before transitioning to stronger endgame options.</p>
+          <div class="build-tags"><span class="btag btag-fire">Fire</span><span class="btag btag-magic">Magic</span></div>
+        </div>
+
+        <div class="card build-card tier-b-card">
+          <div class="build-tier">B</div>
+          <h3>Eldritch Blast</h3>
+          <p>Pure Eldritch energy build. Magic damage at range. Solid but outclassed by Echoing Strike in most situations.</p>
+          <div class="build-tags"><span class="btag btag-magic">Magic Dmg</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEMON BUILD DEEP DIVE -->
+    <section id="demon">
+      <h2>😈 Demon Summoner Build — Deep Dive</h2>
+      <p>Best starter for new Warlocks. Let your demons kill everything while you buff and direct them.</p>
+
+      <div class="two-col">
+
+        <div>
+          <h3 class="sub-heading">Skill Points</h3>
+          <table class="skill-table">
+            <thead><tr><th>Skill</th><th>Points</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr class="row-max"><td>Summon Goatman</td><td>20</td><td>Main tank + damage dealer</td></tr>
+              <tr class="row-max"><td>Demonic Mastery</td><td>20</td><td>All demon stats +huge</td></tr>
+              <tr class="row-max"><td>Bind Demon</td><td>20</td><td>Bind a boss demon for insane DPS</td></tr>
+              <tr class="row-max"><td>Blood Oath</td><td>20</td><td>Survivability for your army</td></tr>
+              <tr class="row-max"><td>Sigil: Lethargy</td><td>20</td><td>Shreds enemy physical resistance</td></tr>
+              <tr><td>Death Mark</td><td>1</td><td>Teleport bound demon to target</td></tr>
+              <tr><td>Blood Boil</td><td>1</td><td>AoE filler</td></tr>
+              <tr><td>Hex: Bane</td><td>1</td><td>Curse/debuff support</td></tr>
+            </tbody>
+          </table>
+
+          <h3 class="sub-heading" style="margin-top:1.5rem;">Stat Allocation</h3>
+          <table class="skill-table">
+            <thead><tr><th>Stat</th><th>Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Strength</td><td>Just enough for gear</td></tr>
+              <tr><td>Dexterity</td><td>Just enough for gear</td></tr>
+              <tr class="row-max"><td>Vitality</td><td>Everything else</td></tr>
+              <tr><td>Energy</td><td>0 — never invest here</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h3 class="sub-heading">Gear</h3>
+          <table class="skill-table">
+            <thead><tr><th>Slot</th><th>Best in Slot</th><th>Budget Option</th></tr></thead>
+            <tbody>
+              <tr><td>Weapon</td><td>Beast / Mang Song's Lesson</td><td>Spirit Sword</td></tr>
+              <tr><td>Body</td><td>Enigma (teleport!)</td><td>Smoke / Stealth</td></tr>
+              <tr><td>Helm</td><td>Harlequin Crest (Shako)</td><td>Rare +skills helm</td></tr>
+              <tr><td>Shield</td><td>Spirit (35% FCR)</td><td>Rhyme</td></tr>
+              <tr><td>Gloves</td><td>Dracul's Grasp</td><td>Magefist</td></tr>
+              <tr><td>Belt</td><td>Arachnid Mesh</td><td>Goldwrap</td></tr>
+              <tr><td>Boots</td><td>War Traveler</td><td>Aldur's Advance</td></tr>
+              <tr><td>Rings</td><td>2x Stone of Jordan</td><td>Raven Frost + leech ring</td></tr>
+              <tr><td>Amulet</td><td>Mara's Kaleidoscope</td><td>Rare +2 all skills</td></tr>
+            </tbody>
+          </table>
+
+          <h3 class="sub-heading" style="margin-top:1.5rem;">Mercenary</h3>
+          <div class="merc-box">
+            <div class="merc-title">Act 2 Might Mercenary (Offensive)</div>
+            <table class="skill-table">
+              <tbody>
+                <tr><td>Weapon</td><td>Pride runeword (Concentration aura)</td></tr>
+                <tr><td>Armor</td><td>Fortitude or Chains of Honor</td></tr>
+                <tr><td>Helm</td><td>Andariel's Visage</td></tr>
+              </tbody>
+            </table>
+            <p style="font-size:0.85rem;color:var(--text-dim);margin-top:0.5rem;">The Might aura amplifies your Goatman's physical damage massively.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="strategy-box">
+        <h3>⚔️ Combat Strategy</h3>
+        <ol class="strategy-list">
+          <li>Cast <strong>Sigil: Lethargy</strong> on the boss first — reduces their Physical Damage Reduction</li>
+          <li><strong>Bind</strong> Hephasto the Armorer (preferably Cursed + Fanaticism affix) for massive DPS</li>
+          <li>Use <strong>Death Mark</strong> to teleport your Bound Demon directly onto priority targets</li>
+          <li>Cast <strong>Blood Boil</strong> for AoE while demons handle single targets</li>
+          <li>Use <strong>Hex: Bane</strong> to amplify damage on elites and bosses</li>
+          <li>Stay back — let your demons soak damage</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MIRRORED BLADES BUILD -->
+    <section id="mirrored">
+      <h2>⚡ Mirrored Blades Build — Deep Dive</h2>
+      <p>Strong single-target physical build using the Warlock's unique ability to wield a 2H weapon + shield simultaneously.</p>
+
+      <div class="two-col">
+        <div>
+          <h3 class="sub-heading">Skill Points</h3>
+          <table class="skill-table">
+            <thead><tr><th>Skill</th><th>Points</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr class="row-max"><td>Mirrored Blades</td><td>20</td><td>Primary damage</td></tr>
+              <tr class="row-max"><td>Demonic Mastery</td><td>20 (with +skills)</td><td>Demon damage amp</td></tr>
+              <tr class="row-max"><td>Hex: Bane</td><td>1+</td><td>Debuff + damage amp</td></tr>
+              <tr><td>Consume</td><td>1</td><td>Pre-fight power buff</td></tr>
+              <tr><td>Blood Oath</td><td>1</td><td>Defensive utility</td></tr>
+              <tr><td>Sigil: Death</td><td>1</td><td>AoE zone control</td></tr>
+              <tr><td>Bind Demon</td><td>1</td><td>Extra DPS support</td></tr>
+              <tr><td>Hex: Purge</td><td>Remaining</td><td>Dump points</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h3 class="sub-heading">Gear Priorities</h3>
+          <div class="prio-list">
+            <div class="prio-item"><span class="prio-num">1</span><div><strong>Enhanced Damage</strong> — highest priority on weapon</div></div>
+            <div class="prio-item"><span class="prio-num">2</span><div><strong>Increased Attack Speed</strong> — more hits = more damage</div></div>
+            <div class="prio-item"><span class="prio-num">3</span><div><strong>Deadly Strike</strong> — double damage chance on every hit</div></div>
+            <div class="prio-item"><span class="prio-num">4</span><div><strong>Life & Mana Leech</strong> — sustain in long fights</div></div>
+            <div class="prio-item"><span class="prio-num">5</span><div><strong>Resistances</strong> — cap all resistances at 75% in hell</div></div>
+          </div>
+
+          <h3 class="sub-heading" style="margin-top:1.2rem;">Key Items</h3>
+          <ul class="gear-list">
+            <li>🗡️ <strong>Weapon:</strong> High ED Colossus Blade or Crystal Sword runeword</li>
+            <li>🛡️ <strong>Shield:</strong> Stormshield or Spirit — only Warlock can use both!</li>
+            <li>🧥 <strong>Armor:</strong> Enigma for teleport, Chains of Honor for resistances</li>
+            <li>⛑️ <strong>Helm:</strong> Hellwarden's Will — +skills + deadly strike</li>
+            <li>🧤 <strong>Gloves:</strong> Dracul's Grasp (open wounds) or Gore Rider boots</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="strategy-box">
+        <h3>⚔️ Combat Rotation</h3>
+        <ol class="strategy-list">
+          <li>Pre-buff with <strong>Consume</strong> for the power boost</li>
+          <li>Apply <strong>Hex: Bane</strong> on the target</li>
+          <li>Use <strong>Bind Demon</strong> for extra DPS support</li>
+          <li>Spam <strong>Mirrored Blades</strong> as primary attack</li>
+          <li>Drop <strong>Sigil: Death</strong> under mob packs for AoE</li>
+          <li>Use <strong>Cleave</strong> on large packs if specced into it</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- LEVELING -->
+    <section id="leveling">
+      <h2>📈 Leveling Guide (1 → 75)</h2>
+      <p>Level 75 is the breakpoint for most endgame gear and builds. Here's the fastest path.</p>
+
+      <div class="card-grid">
+        <div class="card level-card">
+          <div class="level-badge">1–15</div>
+          <h3>Act 1 — Normal</h3>
+          <p>Put first 3 points into <strong>Summon Goatman</strong>. Rush through Den of Evil and Cold Plains. Your Goatman tanks everything — stay behind it.</p>
+        </div>
+        <div class="card level-card">
+          <div class="level-badge">15–25</div>
+          <h3>Act 2–3 — Normal</h3>
+          <p>Max Summon Goatman. Add 1 point to Bind Demon. Start putting points into <strong>Demonic Mastery</strong>. Maggot Lair and Travincal are great XP.</p>
+        </div>
+        <div class="card level-card">
+          <div class="level-badge">25–40</div>
+          <h3>Act 4–5 — Normal</h3>
+          <p>Keep maxing Demonic Mastery. Rush Chaos Sanctuary. Start adding Death Mark for Bound Demon control. Baal runs for the final levels.</p>
+        </div>
+        <div class="card level-card">
+          <div class="level-badge">40–55</div>
+          <h3>Nightmare Difficulty</h3>
+          <p>Rush through with your demon army. Nightmare Andariel and Mephisto give great XP and drops. Bind stronger demons as you progress.</p>
+        </div>
+        <div class="card level-card">
+          <div class="level-badge">55–75</div>
+          <h3>Hell Difficulty</h3>
+          <p>Max Blood Oath and Sigil: Lethargy. Cap your resistances before entering Hell. Farm Nightmare Baal for levels 65-75 if Hell feels too hard.</p>
+        </div>
+        <div class="card level-card">
+          <div class="level-badge">75+</div>
+          <h3>Endgame Setup</h3>
+          <p>Transition to your chosen endgame build. Get Enigma for teleport. Respec using Akara in Act 1 (one free per difficulty) if needed.</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>💡 Starter Tip:</strong> The Demon Summoner build requires almost <strong>no gear</strong> to function. It's the safest ladder starter — your demons carry you even with bad equipment. Start here, farm gear, then respec into Mirrored Blades or Echoing Strike.
+      </div>
+    </section>
+
+    <!-- FARMING -->
+    <section id="farming">
+      <h2>💰 Farming Spots</h2>
+      <p>Where to grind Runes, Unique items, and gear for your Warlock.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>🧙 The Countess</h3>
+          <ul>
+            <li>Best rune farming spot in early game</li>
+            <li>Location: Black Marsh → Forgotten Tower (Act 1)</li>
+            <li>Drops: Io rune and below</li>
+            <li>Great for building Insight, Spirit, Stealth</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🏛️ The Pit</h3>
+          <ul>
+            <li>Best early magic find spot</li>
+            <li>Location: Tamoe Highland (Act 1, Hell)</li>
+            <li>No immunities — everything is killable</li>
+            <li>High density, great unique drops</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>👸 Andariel</h3>
+          <ul>
+            <li>Act 1 boss — fast to kill</li>
+            <li>Drops Harlequin Crest, Mara's, Hotspurs</li>
+            <li>Level 25 area — easy with Goatman tank</li>
+            <li>Farm on Nightmare for low-level uniques</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🐮 Secret Cow Level</h3>
+          <ul>
+            <li>Portal: Combine Wirt's Leg + Tome of Town Portal</li>
+            <li>Dense packs — excellent XP and drops</li>
+            <li>Hell Cows require strong resistances</li>
+            <li>Great for Sigil: Death + Cleave Warlock</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🔥 Chaos Sanctuary</h3>
+          <ul>
+            <li>Act 4 — Diablo's domain</li>
+            <li>Dense elite packs + Diablo boss kill</li>
+            <li>Drops high runes and top tier uniques</li>
+            <li>Bind a Venom Lord for insane bound demon DPS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🌊 River of Flame</h3>
+          <ul>
+            <li>Just before Chaos Sanctuary (Act 4, Hell)</li>
+            <li>Good pack density, elite packs</li>
+            <li>Combine with Chaos Sanctuary run</li>
+            <li>Hephasto the Armorer spawns here — bind him!</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>💎 Travincal</h3>
+          <ul>
+            <li>High Council — 3 unique monsters guaranteed</li>
+            <li>Best Beli and Rune farming in Act 3</li>
+            <li>Drops High Runes on Hell difficulty</li>
+            <li>Bind a Council member for free DPS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>👾 Eldritch &amp; Shenk</h3>
+          <ul>
+            <li>Act 5, Hell — Frigid Highlands area</li>
+            <li>Fast clears, guaranteed boss kills</li>
+            <li>Shenk drops can include top uniques</li>
+            <li>Good warm-up run before Baal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips">
+      <h2>💡 Pro Tips</h2>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">🔗</div>
+          <h3>Bind the Right Demon</h3>
+          <p>Hephasto the Armorer (River of Flame) with a <strong>Cursed affix</strong> is the best Bound Demon. Cursed applies Amplify Damage — doubles your demon's damage output.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🛡️</div>
+          <h3>Unique Mechanic — Use It</h3>
+          <p>Only Warlocks can wield a 2-handed weapon in one hand with a shield in the other. Always use a shield — never go two-handed.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">📖</div>
+          <h3>Exclusive Runeword Bases</h3>
+          <p>Warlocks have access to exclusive "shield book" types and special daggers as runeword bases. Check for Warlock-specific runewords before using generic ones.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">⚡</div>
+          <h3>Cap Resistances First</h3>
+          <p>75% in all resistances is mandatory for Hell difficulty. Use Smoke, Rhyme, or Ancients' Pledge before worrying about damage. Dead Warlocks do zero damage.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔄</div>
+          <h3>Free Respec</h3>
+          <p>Talk to Akara in Act 1 for one free respec per difficulty (Normal, Nightmare, Hell). Use the Normal respec to transition from leveling build to endgame build around level 60.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🧿</div>
+          <h3>Sigil Placement Matters</h3>
+          <p>Cast Sigil: Death just before enemies enter a room — they walk right into it. Cast Sigil: Lethargy on bosses before your demon attacks to shred their Physical Damage Reduction.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🧪</div>
+          <h3>Get Enigma Early</h3>
+          <p>The Enigma runeword gives <strong>Teleport</strong>. This changes everything — you can skip through levels instantly. Farm Jah + Ith + Ber runes as a top priority.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🐐</div>
+          <h3>Goatman Is Your Best Friend</h3>
+          <p>Summon Goatman should always be up. Re-summon if it dies. With max Demonic Mastery it hits like a truck and has enormous health. Keep it between you and enemies.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made for Lev 🎮 | Diablo II Resurrected — Warlock Guide</p>
+    <p class="footer-sources">
+      Sources:
+      <a href="https://www.icy-veins.com/d2/warlock-class-and-builds" target="_blank">Icy Veins</a> ·
+      <a href="https://maxroll.gg/d2/guides/mirrored-blades-warlock-guide" target="_blank">Maxroll.gg</a> ·
+      <a href="https://www.aoeah.com/news/4390--d2r-reign-of-the-warlock-expansion-best-build-tier-list-2026" target="_blank">AOEAH</a>
+    </p>
+  </footer>
+
+</body>
+</html>
