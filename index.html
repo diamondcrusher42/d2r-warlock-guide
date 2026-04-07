@@ -25,6 +25,7 @@
   <nav>
     <a href="#overview">Overview</a>
     <a href="#trees">Skill Trees</a>
+    <a href="#progression">Progression</a>
     <a href="#builds">Builds</a>
     <a href="#demon">Demon Build</a>
     <a href="#mirrored">Mirrored Blades</a>
@@ -106,6 +107,414 @@
           <div class="skill-card"><div class="skill-name">Consume</div><div class="skill-desc">Consume a demon to gain power. Used in Mirrored Blades build to boost combat effectiveness before engaging.</div><div class="skill-tag">1 point (Mirrored)</div></div>
         </div>
       </div>
+    </section>
+
+    <!-- SKILL PROGRESSION -->
+    <section id="progression">
+      <h2>🗺️ Skill Tree Progression</h2>
+      <p>Where to put your skill points, in what order, and why — for each major build path. You get <strong>one skill point per level</strong> (plus 1 bonus point from Den of Evil quest × 3 difficulties = 3 free points). Max level is 99, but all builds are complete by level ~85.</p>
+
+      <div class="info-box" style="margin-bottom:1.5rem;">
+        <strong>🔄 Free respecs:</strong> Akara in Act 1 gives <strong>one free respec per difficulty</strong> (Normal, Nightmare, Hell). Use the Normal respec around level 30–40 to clean up any misplaced early points. Don't waste the Hell respec — save it for when you switch between endgame builds.
+      </div>
+
+      <div class="prog-tabs">
+        <button class="prog-tab demon-prog active-prog" onclick="switchProg('demon', this)">😈 Demon Summoner</button>
+        <button class="prog-tab echo-prog" onclick="switchProg('echo', this)">⚡ Echoing Strike</button>
+        <button class="prog-tab mirror-prog" onclick="switchProg('mirror', this)">🗡️ Mirrored Blades</button>
+      </div>
+
+      <!-- DEMON SUMMONER PROGRESSION -->
+      <div id="prog-demon" class="prog-panel active-prog-panel">
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge">Normal<br/>Lvl 1–20</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Establish your tank — Summon Goatman</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Summon Goatman</span>
+                <span class="prog-skill-why">— your very first point, level 1. Your tank is online immediately.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Blood Boil</span>
+                <span class="prog-skill-why">— unlock for AoE damage filler while Goatman is fighting.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">18</span>
+                <span class="prog-skill-name">Summon Goatman → 20</span>
+                <span class="prog-skill-why">— max it. Every point increases HP, damage, and resistances. This is your core until Act 4.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Play style:</strong> Let Goatman pull aggro. You stand behind it and toss Blood Boil on packs. Pick up gear from every monster — you need Fire Resistance before Act 2.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge">Normal<br/>Lvl 20–40</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Unlock Bind Demon + supercharge your army</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Bind Demon</span>
+                <span class="prog-skill-why">— unlock. You can now bind a demon from the world. Try it on a Fallen Shaman first.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Death Mark</span>
+                <span class="prog-skill-why">— unlock. Teleports your Bound Demon to any target. Essential for direction control.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Hex: Bane</span>
+                <span class="prog-skill-why">— unlock. Apply on elites before your demons attack — amplifies all damage taken.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">17</span>
+                <span class="prog-skill-name">Demonic Mastery → 20</span>
+                <span class="prog-skill-why">— core passive. Every point increases your entire demon army's damage, speed, and HP. Massive value.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Key milestone:</strong> Around level 35 in Act 4 Normal, bind <strong>Hephasto the Armorer</strong> (River of Flame). He becomes your permanent Bound Demon — massive single-target DPS. Use Death Mark to send him into fights.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-nm">Nightmare<br/>Lvl 40–60</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Survivability + resistance shredding</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">20</span>
+                <span class="prog-skill-name">Blood Oath → 20</span>
+                <span class="prog-skill-why">— max it. Dramatically increases your entire demon army's survivability. Goatmen stop dying in Nightmare.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Sigil: Lethargy</span>
+                <span class="prog-skill-why">— unlock. Cast before any elite fight — reduces enemy Physical Damage Reduction. Mandatory for boss kills.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Cap your resistances now.</strong> Nightmare carries -40% resist penalty. Make Ancients' Pledge shield (Ral + Ort + Tal from Hellforge quest) and Stealth armor if you haven't already.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-nm">NM → Hell<br/>Lvl 60–75</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Max Sigil: Lethargy + finish Bind Demon</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">19</span>
+                <span class="prog-skill-name">Sigil: Lethargy → 20</span>
+                <span class="prog-skill-why">— at 20 points it reduces enemy PDR by 50%+. Doubles your demon army's effective damage in Hell.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">19</span>
+                <span class="prog-skill-name">Bind Demon → 20</span>
+                <span class="prog-skill-why">— increases the Bound Demon's bonus stats. A fully specced Hephasto hits like a freight train.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Hell -100% resist penalty.</strong> You MUST have 75% in all elements before entering Hell. Spirit shield + Ancients' Pledge or Smoke armor. Respec via Akara if your points are messy from leveling.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-end">Endgame<br/>Lvl 75+</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Dump remaining points + equip Beast</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">∞</span>
+                <span class="prog-skill-name">Hex: Purge</span>
+                <span class="prog-skill-why">— dump all remaining points here. Removes enemy buffs. Scales ok with investment but isn't core.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Gear completes the build:</strong> Once you have <strong>Beast</strong> (Fanaticism aura) + <strong>Enigma</strong> (Teleport) + Insight merc, your demon army becomes unstoppable. At this point skill allocation is finished — farming gear is what matters.</p>
+          </div>
+        </div>
+
+        <div class="prog-total-box">
+          <strong>Final allocation:</strong> Summon Goatman 20 · Demonic Mastery 20 · Blood Oath 20 · Bind Demon 20 · Sigil: Lethargy 20 · Death Mark 1 · Blood Boil 1 · Hex: Bane 1 · Hex: Purge (remainder) = <strong>5 maxed skills, army is complete at ~lvl 85</strong>
+        </div>
+
+      </div>
+
+      <!-- ECHOING STRIKE PROGRESSION -->
+      <div id="prog-echo" class="prog-panel">
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge">Normal<br/>Lvl 1–20</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Early survival bridge → transition to Echoing Strike</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">3</span>
+                <span class="prog-skill-name">Summon Goatman</span>
+                <span class="prog-skill-why">— 3 pts for a functional early tank. Don't max it — you'll respec these points later.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Echoing Strike</span>
+                <span class="prog-skill-why">— unlock at the first opportunity (check Eldritch tree prerequisites). This is your S-Tier damage skill.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">16</span>
+                <span class="prog-skill-name">Echoing Strike → 17</span>
+                <span class="prog-skill-why">— dump every remaining point here. Magic damage bypasses most immunities — it works on everything.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Use your Normal respec around level 30</strong> if you put early points into Goatman. Clean slate into full Echoing Strike investment. Goatman is a crutch — Echoing Strike is the build.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge">Normal<br/>Lvl 20–40</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Max Echoing Strike + unlock support skills</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">3</span>
+                <span class="prog-skill-name">Echoing Strike → 20</span>
+                <span class="prog-skill-why">— finish maxing. Scales with Faster Cast Rate — stack FCR on gear at the same time.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Hex: Bane</span>
+                <span class="prog-skill-why">— unlock. Cast before hitting elites — increases all damage taken. One point is all you need.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Bind Demon</span>
+                <span class="prog-skill-why">— 1 point for a companion. Bind a Venom Lord or Hephasto for extra DPS while you cast.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Death Mark</span>
+                <span class="prog-skill-why">— direct your Bound Demon to priority targets while you spam Echoing Strike from a distance.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">13</span>
+                <span class="prog-skill-name">Demonic Mastery → 15</span>
+                <span class="prog-skill-why">— boosts your bound demon. Mid-priority — you're a caster, not a summoner, but the buff helps.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Stack Faster Cast Rate (FCR):</strong> Echoing Strike scales with FCR, not attack speed. Target 105% FCR breakpoint with Spirit + Arachnid Mesh + Mara's. This is when damage really takes off.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-nm">Nightmare<br/>Lvl 40–60</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Max Demonic Mastery + army survivability</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">5</span>
+                <span class="prog-skill-name">Demonic Mastery → 20</span>
+                <span class="prog-skill-why">— finish maxing. Your Bound Demon becomes a serious secondary damage source in Nightmare.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">20</span>
+                <span class="prog-skill-name">Blood Oath → 20</span>
+                <span class="prog-skill-why">— max for demon survivability. Stops your Bound Demon from dying to Nightmare AoE constantly.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note">At this stage Echoing Strike should be deleting entire screens. If it feels weak, check your FCR — you need at least 63% FCR to hit a meaningful breakpoint. Two Spirit items (sword + shield) gets you to 70% alone.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-hell">Hell<br/>Lvl 60–75</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Finalize support + unlock synergies</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Sigil: Death</span>
+                <span class="prog-skill-why">— 1 point. Drop it on dense mob packs — extra AoE while Echoing Strike handles single targets.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Hex: Purge</span>
+                <span class="prog-skill-why">— 1 point. Removes immunity auras from Council members and other buffed elites.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">∞</span>
+                <span class="prog-skill-name">Hex: Purge → max <em>or</em> Blood Oath → max</span>
+                <span class="prog-skill-why">— remaining points go here. More Blood Oath keeps your demon alive in Hell. Hex: Purge has diminishing returns.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Magic damage immunities:</strong> Echoing Strike cannot damage magic-immune enemies. You will encounter some in Hell (around 5-10% of monsters). Use your Bound Demon + Sigil: Death on those. This is the only weakness of the build.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-end">Endgame<br/>Lvl 75+</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">FCR cap + Enigma teleport = fastest farmer in the game</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">—</span>
+                <span class="prog-skill-name">Skills are done. Gear is the progression now.</span>
+                <span class="prog-skill-why"></span>
+              </div>
+            </div>
+            <p class="prog-phase-note">Target gear: <strong>2× Spirit</strong> (70% FCR) → <strong>Arachnid Mesh</strong> (20% FCR) → <strong>Mara's</strong> → <strong>2× SoJ</strong>. With Enigma you can teleport across entire zones and nuke packs mid-flight. This build farms Terror Zones faster than any other Warlock build.</p>
+          </div>
+        </div>
+
+        <div class="prog-total-box">
+          <strong>Final allocation:</strong> Echoing Strike 20 · Demonic Mastery 20 · Blood Oath 20 · Hex: Bane 1 · Bind Demon 1 · Death Mark 1 · Sigil: Death 1 · Hex: Purge (remainder) = <strong>3 maxed skills, fully online at ~lvl 65</strong>
+        </div>
+
+      </div>
+
+      <!-- MIRRORED BLADES PROGRESSION -->
+      <div id="prog-mirror" class="prog-panel">
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge">Normal<br/>Lvl 1–20</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Bridge with Goatman → shift to Mirrored Blades</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">3</span>
+                <span class="prog-skill-name">Summon Goatman</span>
+                <span class="prog-skill-why">— 3 pts for early survival only. Will be respecced out later.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Mirrored Blades</span>
+                <span class="prog-skill-why">— unlock immediately when available. Your melee damage core.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Hex: Bane</span>
+                <span class="prog-skill-why">— 1 point early. Apply before every elite fight — amplifies all your physical strikes.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">15</span>
+                <span class="prog-skill-name">Mirrored Blades → 17</span>
+                <span class="prog-skill-why">— stack points into primary damage. Every point increases mirror strike count and damage.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Weapon matters most for this build.</strong> Find a 4-socket sword base as early as possible for Spirit runeword (+2 skills, FCR, mana). Mirrored Blades scales with your actual weapon damage — upgrade weapons constantly while leveling.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge">Normal<br/>Lvl 20–40</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Max Mirrored Blades + unlock Consume</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">3</span>
+                <span class="prog-skill-name">Mirrored Blades → 20</span>
+                <span class="prog-skill-why">— finish maxing. At 20 pts it strikes multiple times per swing — single target destruction.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Consume</span>
+                <span class="prog-skill-why">— 1 point. Use before every boss fight — consumes a demon for a significant power buff. Always pre-cast this.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Bind Demon</span>
+                <span class="prog-skill-why">— 1 point. Bind Hephasto as backup DPS. He distracts enemies while you melee from the flank.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Blood Oath</span>
+                <span class="prog-skill-why">— 1 point. Keeps your Bound Demon alive. You need it tanking for you while you melee.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">13</span>
+                <span class="prog-skill-name">Demonic Mastery → 15</span>
+                <span class="prog-skill-why">— boosts Bound Demon. More secondary DPS and HP on your companion.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Use Normal respec here</strong> if you started with Goatman points. Respec into pure Mirrored Blades + Demonic Mastery. This is when the build starts feeling like a melee monster — especially with the 2H weapon in 1 hand mechanic.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-nm">Nightmare<br/>Lvl 40–60</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Finish Demonic Mastery + max Blood Oath</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">5</span>
+                <span class="prog-skill-name">Demonic Mastery → 20</span>
+                <span class="prog-skill-why">— finish. Your Bound Demon is now a legitimate damage dealer, not just a distraction.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">19</span>
+                <span class="prog-skill-name">Blood Oath → 20</span>
+                <span class="prog-skill-why">— max it. Without this Hephasto dies to Nightmare AoE constantly and you lose your extra DPS mid-fight.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Attack Speed is critical now.</strong> Stack Increased Attack Speed (IAS) on gloves and weapon. More swings = more Mirrored Blade procs = dramatically more damage. Dracul's Grasp gloves + high ED weapon is the upgrade priority here.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-hell">Hell<br/>Lvl 60–75</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">AoE control + finish utility</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Sigil: Death</span>
+                <span class="prog-skill-why">— 1 point. Drop on dense packs while you melee the pack leader — AoE cleanup around you.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">1</span>
+                <span class="prog-skill-name">Death Mark</span>
+                <span class="prog-skill-why">— 1 point. Send Hephasto into a boss before you engage. He stuns and distracts while you flank.</span>
+              </div>
+              <div class="prog-skill-row">
+                <span class="prog-pts">∞</span>
+                <span class="prog-skill-name">Hex: Purge → max</span>
+                <span class="prog-skill-why">— dump remaining points. Removes boss auras (Fanaticism, Might, Conviction) — big DPS increase vs Council.</span>
+              </div>
+            </div>
+            <p class="prog-phase-note"><strong>Physical immunes exist in Hell (~15% of monsters).</strong> When you hit one, switch to Sigil: Death + Bound Demon while you walk around it. Keep Hex: Bane on as a debuff even on physicals — it reduces all resistances, not just physical.</p>
+          </div>
+        </div>
+
+        <div class="prog-phase">
+          <div class="prog-phase-badge phase-end">Endgame<br/>Lvl 75+</div>
+          <div class="prog-phase-body">
+            <div class="prog-phase-title">Top-tier weapon upgrade is the endgame</div>
+            <div class="prog-skill-rows">
+              <div class="prog-skill-row">
+                <span class="prog-pts">—</span>
+                <span class="prog-skill-name">Skills complete. Weapon is everything now.</span>
+                <span class="prog-skill-why"></span>
+              </div>
+            </div>
+            <p class="prog-phase-note">Mirrored Blades scales directly with weapon Enhanced Damage. Target a high-ED base (Colossus Blade or cryptic sword) for a runeword, or farm for a rare/unique with 350%+ ED. Stormshield in the off-hand (only Warlock can do this!) gives you max block + 35% DR while hitting with a 2H sword — no other class can replicate this.</p>
+          </div>
+        </div>
+
+        <div class="prog-total-box">
+          <strong>Final allocation:</strong> Mirrored Blades 20 · Demonic Mastery 20 · Blood Oath 20 · Hex: Bane 1 · Consume 1 · Bind Demon 1 · Blood Oath 1 · Sigil: Death 1 · Death Mark 1 · Hex: Purge (remainder) = <strong>3 maxed skills, fully online at ~lvl 70</strong>
+        </div>
+
+      </div>
+
+      <script>
+        function switchProg(id, btn) {
+          document.querySelectorAll('.prog-panel').forEach(p => p.classList.remove('active-prog-panel'));
+          document.querySelectorAll('.prog-tab').forEach(t => t.classList.remove('active-prog'));
+          document.getElementById('prog-' + id).classList.add('active-prog-panel');
+          btn.classList.add('active-prog');
+        }
+      </script>
+
     </section>
 
     <!-- BUILDS OVERVIEW -->
