@@ -1025,8 +1025,167 @@ footer a:hover { text-decoration: underline; }
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
+/* === BOSS DROP TABLES === */
+.boss-drop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.boss-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.3rem;
+  border: 1px solid #2a1a1e;
+}
+
+.boss-card.boss-quest {
+  border-color: rgba(201,168,76,0.4);
+  background: linear-gradient(135deg, #1a1208, #1e1410);
+}
+
+.boss-card h4 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.boss-card .boss-location {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 0.9rem;
+}
+
+.boss-diff-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  flex-wrap: wrap;
+}
+
+.boss-diff-row:last-child { border-bottom: none; }
+
+.boss-diff-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 75px;
+}
+
+.diff-norm { color: #2ecc71; }
+.diff-nm   { color: #f39c12; }
+.diff-hell { color: var(--crimson-bright); }
+
+.boss-diff-runes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.rune-chip-sm {
+  background: var(--card2);
+  border: 1px solid #3a2530;
+  border-radius: 3px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+.rune-chip-sm.r-mid { border-color: rgba(243,156,18,0.4); color: #f39c12; }
+.rune-chip-sm.r-high { border-color: rgba(255,71,87,0.5); color: #ff9090; background: rgba(139,0,0,0.12); }
+.rune-chip-sm.r-range { font-style: italic; color: var(--text-dim); background: transparent; border-color: transparent; padding-left: 0; }
+
+.boss-note {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 0.7rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* === RUNE PROPERTIES TABLE === */
+.rune-props-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--dark2);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+.rune-props-table th {
+  background: #1a0e12;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.rune-props-table td {
+  padding: 0.45rem 0.8rem;
+  border-bottom: 1px solid #1a0e12;
+  color: var(--text);
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+.rune-props-table tr:last-child td { border-bottom: none; }
+.rune-props-table tr:hover td { background: rgba(139,0,0,0.06); }
+
+.rune-props-table td:nth-child(1) {
+  font-weight: 800;
+  color: var(--gold-light);
+  white-space: nowrap;
+  width: 55px;
+}
+
+.rune-props-table td:nth-child(2) {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  width: 45px;
+  text-align: center;
+}
+
+.rune-props-table td:nth-child(3) { color: var(--text); }
+.rune-props-table td:nth-child(4) { color: var(--text-dim); font-size: 0.8rem; }
+.rune-props-table td:nth-child(5) { color: var(--text-dim); font-size: 0.8rem; }
+
+.rune-props-table .tier-low { background: rgba(46,204,113,0.04); }
+.rune-props-table .tier-mid { background: rgba(255,165,2,0.05); }
+.rune-props-table .tier-high { background: rgba(255,71,87,0.06); }
+
+.rune-tier-sep td {
+  background: #14090c !important;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+}
+
+.rune-tier-sep.sep-low td { color: #2ecc71; }
+.rune-tier-sep.sep-mid td  { color: #f39c12; }
+.rune-tier-sep.sep-high td { color: var(--crimson-bright); }
+
 /* === RESPONSIVE === */
 @media (max-width: 600px) {
+  .rune-props-table { font-size: 0.76rem; }
+  .boss-drop-grid { grid-template-columns: 1fr; }
+
   .header-inner { flex-direction: column; gap: 0.5rem; }
   .build-block { padding: 1.2rem; }
   .tier-row { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
